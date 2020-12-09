@@ -1,2 +1,2 @@
 # DabaxNX
-Dabax in hdf5/nexus format
+DABAX and DABAM in hdf5/nexus format
