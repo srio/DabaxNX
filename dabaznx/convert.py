@@ -28,7 +28,8 @@ def convert(filename):
     print("File written: ", filename+'.h5')
 
 if __name__ == "__main__":
-
+    import os
+    os.system("rm -f *.h5")
     convert("AtomicConstants")
     convert("f1f2_EPDL97")
     convert("Crystals")
@@ -36,5 +37,9 @@ if __name__ == "__main__":
 
 
 
+    from silx.io.convert import convert
 
+    convert("AtomicConstants.dat", "AtomicConstantsCONVERT.h5")
+    convert("f1f2_EPDL97.dat", "f1f2_EPDL97CONVERT.h5")
+    convert("Crystals.dat", "CrystalsCONVERT.h5")
 
