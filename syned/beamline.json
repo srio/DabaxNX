@@ -1,0 +1,51 @@
+{
+    "CLASS_NAME": "Beamline",
+    "light_source": {
+        "CLASS_NAME": "LightSource",
+        "name": "Undefined",
+        "electron_beam": {
+            "CLASS_NAME": "ElectronBeam",
+            "energy_in_GeV": 1.0,
+            "energy_spread": 0.0,
+            "current": 0.1,
+            "number_of_bunches": 400,
+            "moment_xx": 0.0,
+            "moment_xxp": 0.0,
+            "moment_xpxp": 0.0,
+            "moment_yy": 0.0,
+            "moment_yyp": 0.0,
+            "moment_ypyp": 0.0
+        },
+        "magnetic_structure": {
+            "CLASS_NAME": "MagneticStructure"
+        }
+    },
+    "beamline_elements_list": [
+        {
+            "CLASS_NAME": "BeamlineElement",
+            "optical_element": {
+                "CLASS_NAME": "Mirror",
+                "name": "mirror1",
+                "surface_shape": {
+                    "CLASS_NAME": "SphericalCylinder"
+                },
+                "boundary_shape": {
+                    "CLASS_NAME": "Rectangle",
+                    "x_left": -0.1,
+                    "x_right": 0.1,
+                    "y_bottom": -0.6,
+                    "y_top": 0.6
+                },
+                "coating": "Pt",
+                "coating_thickness": 0.0001
+            },
+            "coordinates": {
+                "CLASS_NAME": "ElementCoordinates",
+                "p": 2.5,
+                "q": 10.0,
+                "angle_radial": 89.828,
+                "angle_azimuthal": 180.0
+            }
+        }
+    ]
+}
